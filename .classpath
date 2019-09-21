@@ -24,6 +24,7 @@
   <classpathentry kind="var" path="M2_REPO/org/springframework/spring-context/3.0.7.RELEASE/spring-context-3.0.7.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-context/3.0.7.RELEASE/spring-context-3.0.7.RELEASE-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/spring-core/3.0.7.RELEASE/spring-core-3.0.7.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-core/3.0.7.RELEASE/spring-core-3.0.7.RELEASE-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/springframework/spring-expression/3.0.7.RELEASE/spring-expression-3.0.7.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-expression/3.0.7.RELEASE/spring-expression-3.0.7.RELEASE-sources.jar"/>
+  <classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_172/jre/lib/tools.jar"/>
   <classpathentry kind="con" path="MULE_RUNTIME"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 </classpath>
