@@ -126,11 +126,11 @@
 		</dependency>
 		
 		<!--mule-core-ee Dependencies mule-core-ee:jar:3.9.0-->
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.mulesoft.muleesb</groupId>
 			<artifactId>mule-core-ee</artifactId>
 			<version>${mule.version}</version>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-module-http</artifactId>
