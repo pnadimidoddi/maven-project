@@ -65,7 +65,7 @@
 					<password>Miracle1990</password>
 					<workerType>Micro</workerType>
 					<redeploy>true</redeploy>
-					<environment>Production</environment>
+					<environment>DEV</environment>
 				</configuration>
 				<executions>
 					<execution>
@@ -77,7 +77,6 @@
 					</execution>
 				</executions>
 			</plugin>
-
 		</plugins>
 	</build>
 
