@@ -6,7 +6,7 @@
 	<artifactId>maven-sample-jms-project-nadimidoddi</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule</packaging>
-	<name>Mule maven-project Application</name>
+	<name>Mule maven-sample-jms-project-nadimidoddi Application</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
