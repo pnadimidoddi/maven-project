@@ -12,16 +12,40 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<mule.version>3.9.0</mule.version>
+		<mule.version>3.9.1</mule.version>
 		<derby.version>10.12.1.1</derby.version>
+		<mule.tools.version>1.7</mule.tools.version>
 	</properties>
 
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>2.0</version>
+				<configuration>
+					<deploymentType>cloudhub</deploymentType>
+					<muleVersion>3.9.1</muleVersion>
+					<username>prasadnadimidoddi</username>
+					<password>Miracle1990</password>
+					<workerType>Micro</workerType>
+					<redeploy>true</redeploy>
+					<environment>Sandbox</environment>
+				</configuration>
+				<executions>
+					<execution>
+						<id>deploy</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-app-maven-plugin</artifactId>
-				<version>1.2</version>
+				<version>${mule.tools.version}</version>
 				<extensions>true</extensions>
 				<configuration>
 					<copyToAppsDirectory>true</copyToAppsDirectory>
@@ -51,29 +75,6 @@
 								</resource>
 							</resources>
 						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>2.0</version>
-				<configuration>
-					<deploymentType>cloudhub</deploymentType>
-					<muleVersion>3.9.0</muleVersion>
-					<username>prasadnadimidoddi</username>
-					<password>Miracle1990</password>
-					<workerType>Micro</workerType>
-					<redeploy>true</redeploy>
-					<environment>Sandbox</environment>
-				</configuration>
-				<executions>
-					<execution>
-						<id>deploy</id>
-						<phase>deploy</phase>
-						<goals>
-							<goal>deploy</goal>
-						</goals>
 					</execution>
 				</executions>
 			</plugin>
@@ -149,7 +150,11 @@
 		</dependency>
 
 		<!--mule-core-ee Dependencies mule-core-ee:jar:3.9.0 -->
-		<!-- <dependency> <groupId>com.mulesoft.muleesb</groupId> <artifactId>mule-core-ee</artifactId> <version>${mule.version}</version> </dependency> -->
+		<dependency>
+			<groupId>com.mulesoft.muleesb</groupId>
+			<artifactId>mule-core-ee</artifactId>
+			<version>${mule.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-module-http</artifactId>
