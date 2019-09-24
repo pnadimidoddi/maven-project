@@ -154,6 +154,7 @@
 			<groupId>com.mulesoft.muleesb</groupId>
 			<artifactId>mule-core-ee</artifactId>
 			<version>${mule.version}</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.mule.modules</groupId>
