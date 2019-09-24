@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.mulesoft.training.HelloMavenTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 7.802 s <<< FAILURE! - in com.mulesoft.training.HelloMavenTest
-mavenFlowReturnsHelloMaven(com.mulesoft.training.HelloMavenTest)  Time elapsed: 5.93 s  <<< ERROR!
-org.mule.api.lifecycle.LifecycleException: Failed to invoke lifecycle phase "start" on object: org.mule.module.http.internal.listener.DefaultHttpListenerConfig@1522de96
-Caused by: java.net.BindException: Address already in use: bind
-
-retrieveFlightsAddsAppropriateHeader(com.mulesoft.training.HelloMavenTest)  Time elapsed: 0.661 s  <<< ERROR!
-org.mule.api.lifecycle.LifecycleException: Failed to invoke lifecycle phase "start" on object: org.mule.module.http.internal.listener.DefaultHttpListenerConfig@681e2fe4
-Caused by: java.net.BindException: Address already in use: bind
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.359 s - in com.mulesoft.training.HelloMavenTest
