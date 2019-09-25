@@ -3,10 +3,10 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mulesoft.training</groupId>
-	<artifactId>maven-project</artifactId>
+	<artifactId>maven-project-jms-prasad</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule</packaging>
-	<name>Mule maven-project Application</name>
+	<name>Mule maven-project-jms-prasad Application</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -51,6 +51,29 @@
 								</resource>
 							</resources>
 						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>2.0</version>
+				<configuration>
+					<deploymentType>cloudhub</deploymentType>
+					<muleVersion>3.9.0</muleVersion>
+					<username>prasadnadimidoddi</username>
+					<password>Miracle1990</password>
+					<workerType>Micro</workerType>
+					<redeploy>true</redeploy>
+					<environment>Production</environment>
+				</configuration>
+				<executions>
+					<execution>
+						<id>deploy</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
 					</execution>
 				</executions>
 			</plugin>
@@ -125,12 +148,12 @@
 			<scope>test</scope>
 		</dependency>
 		<!--mule-core-ee Dependencies -->
-		<!-- <dependency>
+		<dependency>
 			<groupId>com.mulesoft.muleesb</groupId>
 			<artifactId>mule-core-ee</artifactId>
 			<version>${mule.version}</version>
 			<scope>provided</scope>
-		</dependency> -->
+		</dependency>
 		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-module-http</artifactId>
