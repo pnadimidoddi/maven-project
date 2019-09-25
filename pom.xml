@@ -24,7 +24,7 @@
 				<version>2.0</version>
 				<configuration>
 					<deploymentType>cloudhub</deploymentType>
-					<muleVersion>3.9.1</muleVersion>
+					<muleVersion>3.9.0</muleVersion>
 					<username>prasadnadimidoddi</username>
 					<password>Miracle1990</password>
 					<workerType>Micro</workerType>
@@ -83,6 +83,12 @@
 	<!-- Mule Dependencies -->
 	<dependencies>
 		<!-- Xml configuration -->
+		<dependency>
+			<groupId>com.mulesoft.muleesb</groupId>
+			<artifactId>mule-core-ee</artifactId>
+			<version>${mule.version}</version>
+			<scope>provided</scope>
+		</dependency>
 		<!-- Xml configuration -->
 		<dependency>
 			<groupId>org.mule.modules</groupId>
@@ -202,14 +208,8 @@
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
-			<id>mulesoft-release</id>
-			<name>mulesoft release repository</name>
-			<layout>default</layout>
-			<url>http://repository.mulesoft.org/releases/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
+			<id>mule-public</id>
+			<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
 		</pluginRepository>
 	</pluginRepositories>
-
 </project>
