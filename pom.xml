@@ -3,42 +3,22 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mulesoft.training</groupId>
-	<artifactId>maven-sample-jms-project-nadimidoddi</artifactId>
+	<artifactId>maven-project</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule</packaging>
-	<name>Mule maven-sample-jms-project-nadimidoddi Application</name>
+	<name>Mule maven-project Application</name>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<!-- <mule.version>3.9.0</mule.version> -->
+		<mule.version>3.9.0</mule.version>
+		<mule.tools.version>1.2</mule.tools.version>
 		<derby.version>10.12.1.1</derby.version>
-		<mule.tools.version>1.7</mule.tools.version>
 	</properties>
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<configuration>
-					<deploymentType>cloudhub</deploymentType>
-					<muleVersion>3.9.0</muleVersion>
-					<username>prasadnadimidoddi</username>
-					<password>Miracle1990</password>
-					<environment>DEV</environment>
-					<workerType>Micro</workerType>
-				</configuration>
-				<executions>
-					<execution>
-						<id>deploy</id>
-						<phase>deploy</phase>
-						<goals>
-							<goal>deploy</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-app-maven-plugin</artifactId>
@@ -81,23 +61,10 @@
 	<!-- Mule Dependencies -->
 	<dependencies>
 		<!-- Xml configuration -->
-		<!-- <dependency>
-			<groupId>com.mulesoft.muleesb</groupId>
-			<artifactId>mule-core-ee</artifactId>
-			<version>3.9.0</version>
-			<scope>provided</scope>
-		</dependency> -->
-		<!-- Xml configuration -->
 		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-module-spring-config</artifactId>
-			<version>3.9.0</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.mule.modules</groupId>
-			<artifactId>mule-module-spring-config</artifactId>
-			<version>3.9.0</version>
+			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
@@ -111,71 +78,70 @@
 		<dependency>
 			<groupId>org.mule.transports</groupId>
 			<artifactId>mule-transport-file</artifactId>
-			<version>3.9.0</version>
+			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.mule.transports</groupId>
 			<artifactId>mule-transport-http</artifactId>
-			<version>3.9.0</version>
+			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.mule.transports</groupId>
 			<artifactId>mule-transport-jdbc</artifactId>
-			<version>3.9.0</version>
+			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.mule.transports</groupId>
 			<artifactId>mule-transport-jms</artifactId>
-			<version>3.9.0</version>
+			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.mule.transports</groupId>
 			<artifactId>mule-transport-vm</artifactId>
-			<version>3.9.0</version>
+			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<!-- Mule Modules -->
 		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-module-scripting</artifactId>
-			<version>3.9.0</version>
+			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-module-xml</artifactId>
-			<version>3.9.0</version>
+			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<!-- for testing -->
 		<dependency>
 			<groupId>org.mule.tests</groupId>
 			<artifactId>mule-tests-functional</artifactId>
-			<version>3.9.0</version>
+			<version>${mule.version}</version>
 			<scope>test</scope>
 		</dependency>
-
-		<!--mule-core-ee Dependencies mule-core-ee:jar:3.9.0 -->
+		<!--mule-core-ee Dependencies -->
 		<dependency>
 			<groupId>com.mulesoft.muleesb</groupId>
 			<artifactId>mule-core-ee</artifactId>
-			<version>3.9.0</version>
+			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-module-http</artifactId>
-			<version>3.9.0</version>
+			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-module-db</artifactId>
-			<version>3.9.0</version>
+			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -186,7 +152,7 @@
 		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-module-json</artifactId>
-			<version>3.9.0</version>
+			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
@@ -206,8 +172,14 @@
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
-			<id>mule-public</id>
-			<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+			<id>mulesoft-release</id>
+			<name>mulesoft release repository</name>
+			<layout>default</layout>
+			<url>http://repository.mulesoft.org/releases/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
+
 </project>
