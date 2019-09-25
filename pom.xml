@@ -81,12 +81,12 @@
 	<!-- Mule Dependencies -->
 	<dependencies>
 		<!-- Xml configuration -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.mulesoft.muleesb</groupId>
 			<artifactId>mule-core-ee</artifactId>
 			<version>3.9.0</version>
 			<scope>provided</scope>
-		</dependency>
+		</dependency> -->
 		<!-- Xml configuration -->
 		<dependency>
 			<groupId>org.mule.modules</groupId>
