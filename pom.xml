@@ -60,7 +60,6 @@
 				<version>2.2.1</version>
 				<configuration>
 					<deploymentType>cloudhub</deploymentType>
-					<muleVersion>3.9.0</muleVersion>
 					<username>prasadnadimidoddi</username>
 					<password>Miracle1990</password>
 					<workerType>Micro</workerType>
