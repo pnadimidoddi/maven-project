@@ -13,7 +13,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<mule.version>3.9.0</mule.version>
 		<mule.tools.version>1.7</mule.tools.version>
-		<derby.version>10.12.1.1</derby.version>
+		<derby.version>10.17.1.0</derby.version>
 	</properties>
 
 	<build>
